@@ -7,7 +7,8 @@
                 <div class="flex my-3">
                     <p class="text-gray-500 text-sm">{{ $article->author }}</p>
                     <p class="text-sm mx-1">|</p>
-                    <p class="text-gray-500 text-sm">{{ (new \Carbon\Carbon($article->created_at))->diffForHumans() }}</p>
+                    <p class="text-gray-500 text-sm">{{ (new \Carbon\Carbon($article->created_at))->format('d M Y')
+                    }}</p>
                 </div>
                 <p class="my-10">{{ $article->body }}</p>
                 <a href="{{ route('blog') }}" class="hover:underline text-blue-600">Back</a>

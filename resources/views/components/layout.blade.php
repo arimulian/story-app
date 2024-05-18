@@ -11,7 +11,7 @@
     {{-- alpine.js --}}
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     {{-- tailwind & editor.js --}}
-    @vite(['resources/css/app.css', 'resources/js/editor.js'])
+    @vite(['resources/css/app.css'])
 
     <title>{{ $title }}</title>
 </head>

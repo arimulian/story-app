@@ -12,4 +12,5 @@ Route::get('article/{article:slug}', [Controllers\ArticleController::class, 'sho
 
 
 Route::get('write', fn() => view('write', ['title' => 'Write']));
+Route::post('write/store', [Controllers\ArticleController::class, 'store']);
 
